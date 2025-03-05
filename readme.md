@@ -2,8 +2,8 @@
 
 An AI-powered Chrome extension that transforms your online shopping experience on Amazon and Flipkart. It automatically scrapes product pages, extracts structured product details using advanced AI, and lets you ask real-time questions—all in a sleek, modern interface.
 
-![Product AI Assistant](screenshot.png)
-
+![Product AI Assistant](./screenshots/ss1.png)
+![Product AI Assistant2](./screenshots/ss2.png)
 ## Table of Contents
 - [Overview](#overview)
 - [Features](#features)
@@ -100,3 +100,10 @@ Click the "View Stored Context" button to see the structured product details tha
    ```bash
    git clone https://github.com/yourusername/ecommerce-ai-assistant.git
    cd ecommerce-ai-assistant
+   run  python server.py
+    open the chrome
+   goto manage extensions
+    open developer mode
+   click on load unpack
+   select the repo
+   enjoy
