@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "E-commerce AI Agent",
+  "version": "1.0",
+  "description": "AI assistant for Amazon and Flipkart product pages",
+  "permissions": ["scripting", "activeTab", "storage", "tabs"],
+  "host_permissions": [
+    "https://www.amazon.in/*",
+    "https://www.flipkart.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.amazon.in/*/dp/*",
+        "https://www.amazon.in/gp/product/*",
+        "https://www.flipkart.com/*/p/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle",
+      "type": "module"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "128": "icon.png"
+    }
+  }
+}
