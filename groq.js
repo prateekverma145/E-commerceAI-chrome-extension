@@ -1,5 +1,5 @@
 import Groq from "groq-sdk";
-const API_KEY = "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";
+const API_KEY = "yout groq api key";
 
 // groq-wrapper.js (or include directly in your popup.js if you prefer)
 
